@@ -1,0 +1,84 @@
+form{
+    border-bottom:1px solid rgb(194, 187, 187);
+    width:40%;
+    height:auto;
+    margin:auto;
+
+}
+form img{
+    width: 200px;
+    padding-left: 140px;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+form img+p{
+    text-align: center;
+    color:gray;
+}
+.elem{
+    color:rgb(83, 81, 81);
+    font-size:small
+}
+.elemt{
+    color:blue;
+    font-size: 14px;
+}
+.elemt:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+input{
+    border:0.5px solid gray;
+    border-radius: 5px;;
+    width:85%;
+    padding:10px;
+    margin: 0px ;
+    background-color:rgb(238, 242, 247);
+   
+}
+input[type=submit]{
+    margin-bottom:40px ;
+    color:rgb(94, 93, 93);
+    font-weight: bold;
+    margin-left:10px;
+    
+}
+div{
+   margin-top: 30px;
+    width:40%;
+    height:auto;
+    margin:auto;   
+}
+button{
+    padding:10px;
+    width:85%;
+    margin:10px 10px;
+    background-color: aliceblue;
+    border:0.5px solid rgb(201, 195, 195);
+    
+}
+div>button:nth-child(1){
+    margin-top: 20px;
+    background-color: rgb(88, 88, 228);
+    color:#fff;
+    font-weight: bold;
+}
+#btn:hover{
+    background-color: rgb(52, 52, 233);
+}
+div button{
+    background-color: rgb(45, 45, 114);
+    color:#fff;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(124, 124, 148);
+}
+span{
+    color:blue;
+}
+span:hover{
+    transition: 0.5s;
+    text-decoration: underline;
+    
+}
