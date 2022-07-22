@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <nav>
+        <img src="https://static.hsappstatic.net/ui-images/static-2.422/optimized/hubspot-wordmark.svg" alt="">
+        <p>Have an account?<span>SignIn</span></p>
+    </nav>
+    <form action="">
+        <h1>Create a free account</h1>
+        <button>SignUp with Google</button><br>
+        
+        <input type="text"   id="firstname"placeholder="First Name" ><br>
+        <input type="text"   id="lastname" placeholder="Last Name"><br>
+        <input type="email"  id="email" placeholder="Email address"><br>
+        <input type="password" id="password" placeholder="Type Password"><br>
+        <input type="submit" value="SignUp">
+        <p>We’re committed to your privacy. HubSpot uses the information you provide to us to contact you <br>
+            about our relevant content, products, and <br>services. You may unsubscribe from these communications at any time.<br>For more information, check out our <span>Privacy Policy</span> </p>
+    </form>
+    
+</body>
+</html>
+<script>
+    let form=document.querySelector("form");
+    let signupLS=JSON.parse(localStorage.getItem("signup"))||[];
+
+    form.addEventListener("submit",function(e){
+        e.preventDefault();
+        let obj={
+            firstname:form.firstname.value,
+            lastname:form.lastname.value,
+            email:form.email.value,
+            password:form.password.value,
+            
+        }
+        //console.log(obj)
+        if(obj.firstname == "" || obj.lastname == "" || obj.email == "" || obj.password == "")
+        {
+            alert("Feild Empty")
+        }else{
+        signupLS.push(obj);
+        localStorage.setItem("signup",JSON.stringify(signupLS))
+        }
+
+    })
+</script>
