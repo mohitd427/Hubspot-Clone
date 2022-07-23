@@ -28,7 +28,7 @@ form img+p{
     transition: 1s;
 }
 input{
-    border:0.5px solid gray;
+    border:0.5px solid rgb(237, 255, 210);
     border-radius: 5px;;
     width:85%;
     padding:10px;
@@ -42,6 +42,9 @@ input[type=submit]{
     font-weight: bold;
     margin-left:10px;
     
+}
+input[type=submit]:hover{
+    background-color: rgb(160, 252, 252);
 }
 div{
    margin-top: 30px;

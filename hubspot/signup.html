@@ -4,26 +4,34 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>    
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Signup Page</title>
+    <title>Hubspot | Signup</title>
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
     <nav>
-        <img src="https://static.hsappstatic.net/ui-images/static-2.422/optimized/hubspot-wordmark.svg" alt="">
-        <p>Have an account?<span>SignIn</span></p>
+        <a href="index.html"><img src="https://static.hsappstatic.net/ui-images/static-2.422/optimized/hubspot-wordmark.svg" alt=""></a>
+        <p>Have an account?<span><a href="signin.html">SignIn</a> </span></p>
     </nav>
-    <form action="">
-        <h1>Create a free account</h1>
-        <button>SignUp with Google</button><br>
-        
-        <input type="text"   id="firstname"placeholder="First Name" ><br>
-        <input type="text"   id="lastname" placeholder="Last Name"><br>
-        <input type="email"  id="email" placeholder="Email address"><br>
-        <input type="password" id="password" placeholder="Type Password"><br>
-        <input type="submit" value="SignUp">
-        <p>We’re committed to your privacy. HubSpot uses the information you provide to us to contact you <br>
-            about our relevant content, products, and <br>services. You may unsubscribe from these communications at any time.<br>For more information, check out our <span>Privacy Policy</span> </p>
-    </form>
+    <section>
+        <form >
+            <h1>Create a free account</h1>
+            <button> <img id="gol" src="data:image/png;base64,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"> SignUp with Google</button><br>
+            
+            <input type="text"   id="firstname" class="ele" placeholder="First Name" ><br>
+            <input type="text"   id="lastname" class="ele" placeholder="Last Name"><br>
+            <input type="email"  id="email" class="ele" placeholder="Email address"><br>
+            <input type="password" id="password" class="ele" placeholder="Type Password"><br>
+            <input type="submit" value="SignUp">
+            <p>We’re committed to your privacy. HubSpot uses the information you provide to us to contact you 
+                about our relevant content, products, and services. You may unsubscribe from these communications at any time.For more information, check out our <span>Privacy Policy</span> </p>
+        </form>
+        <div>
+            <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/_style-guide/sg-module-images/14@2x.png" alt="">
+            <h3>HubSpot's CRM is 100% free.</h3>
+            <p>No credit card needed.</p>
+        </div>
+    </section>
+    
     
 </body>
 </html>
@@ -47,6 +55,8 @@
         }else{
         signupLS.push(obj);
         localStorage.setItem("signup",JSON.stringify(signupLS))
+        alert("Sign Up Successful")
+        window.location.href="signin.html"
         }
 
     })
