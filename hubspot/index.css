@@ -3,15 +3,26 @@
     margin:0;
     font-family: 'Montserrat', sans-serif;
 }
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.tp {
+color:black;
+}
 top{
     display:flex;
     padding:2% 6%;
     justify-content: space-between;
     align-items: center;
 }
+.lang{
+    border:0;
+}
 .contact{
     display:flex;
     justify-content: space-between;
+    border:0;
 }
 
 .top-links{
@@ -91,7 +102,6 @@ nav>button:hover{
     
 }
 .parent{
-    border:1px solid red;
    
     
     gap:40px;
@@ -100,6 +110,10 @@ nav>button:hover{
     grid-template-rows: 600px;
     background-color: orangered;
     
+}
+.parent a{
+    color:orangered;
+    font-weight: bold;
 }
 .parent>div:nth-child(1){
     
@@ -123,6 +137,12 @@ nav>button:hover{
 .parent button{
     margin-left:20px;
     padding:20px;
+    border-radius: 5px;
+    border:0;
+}
+.parent button:hover{
+    background-color:rgb(169, 193, 214);
+    color: #fff;
 }
 
 h3{
@@ -201,7 +221,7 @@ border:0;
     margin: 40px;
 }
 #hub div:nth-child(1){
-   height:250px;
+  
     border-bottom: 1px solid gray;
 }
 .platform img{
@@ -236,7 +256,8 @@ border:0;
     width:90%;
     background-color: orangered;
     color: white;
-    border:0;      
+    border:0;   
+    border-radius: 5px;;   
     
 }
 .btn:hover{
@@ -414,8 +435,8 @@ footer{
     color:#fff;
 }
 #foot>div p:hover{
-    transition: 0.5ms;
-    text-decoration: underline;
+    transition: 0.2s;
+    transform: scale(1.1);
 }
 #foot h2{
     color:#fff;
